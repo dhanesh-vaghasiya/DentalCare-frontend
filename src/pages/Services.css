@@ -1,0 +1,505 @@
+.services-page {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 0;
+  background: linear-gradient(180deg, var(--arctic-white) 0%, var(--soft-mint) 50%, var(--arctic-white) 100%);
+}
+
+/* Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--deep-navy), var(--accent-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.service-card:hover {
+  border-color: var(--accent-teal);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 137, 123, 0.15);
+}
+
+.service-card.popular {
+  border: 2px solid var(--accent-teal);
+  background: linear-gradient(135deg, rgba(224, 242, 241, 0.3), rgba(255, 255, 255, 1));
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--accent-teal), #00796B);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 137, 123, 0.3);
+}
+
+.service-icon {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.service-header {
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--deep-navy);
+}
+
+.service-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--soft-mint);
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-teal);
+}
+
+.duration {
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  background: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+}
+
+.service-description {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 0;
+}
+
+/* Features */
+.service-features {
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.service-features h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--deep-navy);
+  font-weight: 600;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--text-gray);
+  font-size: 0.938rem;
+  line-height: 1.5;
+}
+
+.check-icon {
+  color: var(--success-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Book Button */
+.book-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+/* Additional Info Section */
+.services-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+.info-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.info-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--deep-navy);
+}
+
+.info-card p {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--deep-navy), var(--accent-teal));
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 8px 24px rgba(26, 35, 126, 0.2);
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cta-section p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  font-size: 1.125rem;
+  padding: 1rem 2.5rem;
+  background: white;
+  color: var(--deep-navy);
+  border: none;
+  font-weight: 600;
+}
+
+.cta-btn:hover {
+  background: var(--soft-mint);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-title {
+    font-size: 2.5rem;
+  }
+
+  .services-subtitle {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.75rem;
+  }
+
+  .cta-section {
+    padding: 3rem 2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-page {
+    padding: 2rem 0;
+  }
+
+  .services-header {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .services-subtitle {
+    font-size: 0.938rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    font-size: 3rem;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .service-pricing {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .price {
+    font-size: 1.25rem;
+  }
+
+  .duration {
+    align-self: flex-start;
+  }
+
+  .service-description {
+    font-size: 0.938rem;
+  }
+
+  .service-features h4 {
+    font-size: 0.938rem;
+  }
+
+  .feature-item {
+    font-size: 0.875rem;
+  }
+
+  .book-btn {
+    padding: 0.875rem;
+    font-size: 0.938rem;
+  }
+
+  .services-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .info-icon {
+    font-size: 2.5rem;
+  }
+
+  .info-card h3 {
+    font-size: 1.125rem;
+  }
+
+  .info-card p {
+    font-size: 0.938rem;
+  }
+
+  .cta-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 0.875rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page {
+    padding: 1.5rem 0;
+  }
+
+  .services-header {
+    margin-bottom: 2rem;
+  }
+
+  .services-title {
+    font-size: 1.5rem;
+  }
+
+  .services-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .services-grid {
+    gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.25rem;
+  }
+
+  .popular-badge {
+    top: -10px;
+    right: 10px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  .service-pricing {
+    padding: 0.75rem;
+  }
+
+  .price {
+    font-size: 1.125rem;
+  }
+
+  .duration {
+    font-size: 0.813rem;
+  }
+
+  .service-description {
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-features {
+    margin-bottom: 1.5rem;
+  }
+
+  .service-features h4 {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .features-list {
+    gap: 0.5rem;
+  }
+
+  .feature-item {
+    font-size: 0.813rem;
+  }
+
+  .check-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .book-btn {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .services-info {
+    gap: 1rem;
+    padding: 2rem 0;
+  }
+
+  .info-card {
+    padding: 1.25rem;
+  }
+
+  .info-icon {
+    font-size: 2rem;
+  }
+
+  .info-card h3 {
+    font-size: 1rem;
+  }
+
+  .info-card p {
+    font-size: 0.875rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+    border-radius: 16px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-section p {
+    font-size: 0.938rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    font-size: 0.938rem;
+    padding: 0.875rem 1.5rem;
+  }
+}
